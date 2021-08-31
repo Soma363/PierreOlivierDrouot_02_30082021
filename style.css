@@ -1,0 +1,20 @@
+/* mise en page Générale */
+#blocpage 
+{
+    width: 1600px;
+    font-family: "Raleway-Regular", Arial, sans-serif;
+    margin: 28px 28px 0px 28px;
+}
+
+/* déclaration des polices personnalisées */
+@font-face
+{
+    font-family: "Raleway-Bold";
+    src: url("Raleway-Bold.ttf");
+}
+
+@font-face
+{
+    font-family: "Raleway-Regular";
+    src: url("Raleway-Regular.ttf");
+}
