@@ -963,3 +963,21 @@ h3
     flex-direction: column;
     width: 33.3%;                
 }
+
+                @media all and (max-width: 768px)
+                {
+                    #infoscontacts
+                    {
+                        flex-direction: column;
+                        height: auto;
+                        width: 100%;
+                        margin-top: 5%;
+                        padding-bottom: 50px;
+                        padding-left: 30px;
+                    }
+
+                    .liens_infos_contacts
+                    {
+                        width: auto;
+                    }
+                }
