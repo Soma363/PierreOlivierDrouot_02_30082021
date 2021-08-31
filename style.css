@@ -264,3 +264,41 @@ input
 {
     display: none;
 }
+
+                /* adaptation responsive du formulaire de recherche*/
+                @media all and (max-width: 768px)
+                {
+                    #form
+                    {                                                                          
+                        align-content: center;
+                        justify-content: center;
+                    }
+                    
+                    input
+                    {                                                
+                        margin-left: -6px;                        
+                    }
+
+                    .recherche
+                    {
+                        width: 50px;
+                        font-size: 0%;
+                        border-radius: 15px;
+                        margin-left: -12px;
+                        height: 53px;
+                    }
+                    
+                    .fa-search
+                    {
+                        display: inline;
+                        font-size: 20px;
+                    }
+                }
+
+                        @media all and (min-width: 280px) and (max-width: 420px)
+                        {
+                            input
+                            {
+                                width: 140px;
+                            }
+                        }
