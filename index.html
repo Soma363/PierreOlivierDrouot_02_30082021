@@ -27,7 +27,13 @@
             <h2>En plein centre ville ou en pleine nature</h2>
             <!-- Formulaire de recherche/ Hébergements disponibles selon le lieu avec icônes-->
             <div id="form">
-            
+                <form method="post" action="traitement.php">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" name="lieu"/>                        
+                </form>        
+                <button class="recherche" type="submit">
+                            Rechercher<i class="fas fa-search"></i>                      
+                </button>                                      
             </div>
             <!-- Filtres des résultats de la recherche selon le type de logement avec icônes-->
             <div id="filtres">

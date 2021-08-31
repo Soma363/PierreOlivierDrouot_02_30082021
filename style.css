@@ -215,3 +215,52 @@ nav a:focus
                                 text-justify: auto;
                             }
                         }
+
+/* mise en page générale du formulaire de recherche */
+#form 
+{    
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 25px;    
+}
+
+/* apparence, formatage de l'icône du formulaire */
+#form .fa-map-marker-alt 
+{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 15px 18px 15px 20px;
+    background-color: #F2F2F2;
+    font-size: 22px;
+    margin-right: 0px;
+}
+
+/* apparence et taille du champ de saisie */
+input
+{
+    border: 2px #F2F2F2 solid;
+    border-right: none;
+    height: 45px;
+    width: 245px;
+    font-size: 1.5em;
+    margin-left: -4px;
+}
+
+/* apparence et taille du bouton de recherche */
+.recherche 
+{
+    height: 49px;
+    width: 150px;
+    background-color: #0065FC;
+    color: #FFFFFF;
+    font-size: 1.3em;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;    
+    border: none;    
+}
+
+.fa-search
+{
+    display: none;
+}
