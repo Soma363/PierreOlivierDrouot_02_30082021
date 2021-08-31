@@ -877,3 +877,53 @@ h3
     box-shadow: 5px 5px 5px #F2F2F2;
     
 }
+
+                /* adaptation responsive de la partie activites */
+                @media all and (min-width: 280px) and (max-width: 768px)
+                {
+                    #activites
+                    {
+                        flex-direction: column;
+                        height: auto;
+                        width: 100%;
+                    }
+
+                    #activites h1
+                    {
+                        margin-left: 100px;
+                    }
+                    
+                    #bloc1, #bloc3
+                    {
+                        display: inline-block;
+                        height: 250px;
+                        width: auto;
+                        margin: 0px;
+                        margin-bottom: 40px;
+                        margin-top: 40px;
+                    }
+
+                    #bloc2, #bloc4
+                    {
+                        display: inline-block;
+                        height: 500px;
+                        width: auto;
+                        margin: 0px;
+                        margin-bottom: 40px;                                
+                    }
+
+                    
+                    .image3, .image4, .image5, .image6, .image7, .image8
+                    {               
+                        width: auto;
+                        margin-left: 30px;
+                        margin-right: 30px;
+                        height: 250px;
+                        box-shadow: 5px 5px 5px #dbd4d4;
+                    }
+
+                    .image5
+                    {            
+                    margin-bottom: 40px;
+                    }
+                }
