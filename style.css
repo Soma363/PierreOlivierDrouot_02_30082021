@@ -302,3 +302,52 @@ input
                                 width: 140px;
                             }
                         }
+
+/* mise en page générale du bloc filtres */                
+#filtres
+{
+    display: flex;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: "Raleway-Bold";    
+    height: 60px;
+    width: auto;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;        
+}                
+
+/* Apparence et dimensions des icônes du bloc filtres */
+#filtres i
+{
+    font-size: 19px;
+    margin-right: 10px;
+    background-color: #DEEBFF;
+    padding: 12px;
+    border-radius: 50px;    
+}
+
+.fa-child
+{
+    width: 19px;
+    text-align: center;
+}
+
+/* Apparence et dimensions des filtres */
+.f
+{   
+    padding-right: 10px;
+    border: 2px solid #F2F2F2;
+    border-left: none;
+    border-radius: 50px;
+    height: 42px;
+    margin-left: 2%;
+    width: auto;
+}
+
+/* Apparence au Survol des filtres */
+.f:hover
+{
+    background-color: #0065FC;
+    border: 4px solid black;
+}
