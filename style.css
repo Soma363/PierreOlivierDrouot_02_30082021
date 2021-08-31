@@ -18,3 +18,94 @@
     font-family: "Raleway-Regular";
     src: url("Raleway-Regular.ttf");
 }
+
+/* mise en page générale de l'en-tête */
+header 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo
+{
+    width: 60%;
+    margin-top: 20px;
+    padding-top: 0px;
+}
+
+/* Dimensions du Logo Reservia */
+.logo img 
+{
+    height: 50px;
+    width: 100px;
+    align-self: flex-start;    
+}
+
+/* Formatage des titres */
+h1 
+{
+    font-family: "Raleway-Bold";
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+h2
+{
+    font-size: 1em;
+    font-weight: normal;
+}
+
+/* mise en page menu */
+nav 
+{    
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+/* mise en page et formatage des liens menu */
+nav a
+{
+    color: #000;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 40px 40px 0px 40px;
+    height: 80px;
+}
+
+nav a:nth-child(1)
+{
+    padding-left: 0px;
+}
+
+/* apparence du lien d'inscription */
+.sinscrire 
+{
+    color: #0065FC;
+    font-weight: bold;
+    text-decoration: none;    
+}
+
+/*apparence des liens d'ancrage au survol */
+nav a:hover 
+{
+    color: #0065FC;
+    border-top: 2px #0065FC solid;
+    
+}
+
+/* apparence des liens d'ancrage à la selection selection */
+nav a:focus 
+{
+    font-weight: bold;
+    color: #0065FC;
+    border-top: 2px #0065FC solid;
+}
+
+.logo:hover, .sinscrire:hover
+{
+    border: none;
+}
