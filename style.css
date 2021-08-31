@@ -423,6 +423,14 @@ input
     width: 15px;
     text-align: center;
 }
+                /* adaptation responsive du texte d'infos*/
+                @media all and (min-width: 280px) and (max-width: 768px)
+                {
+                    #info
+                    {
+                        margin-left: 15px;
+                    }
+                }
 
 /* Mise en page Générale de la première section : alignement du bloc "Hébergements" et du bloc "Les plus poulaires" */
 #resultats
@@ -604,3 +612,112 @@ h3
 {
     color: #F2F2F2;
 }
+
+                /* adaptation responsive de la section "hébergements" et "populaires" */
+                @media all and (min-width: 992px) and (max-width: 1319px)
+                {
+                    .image1
+                    {
+                        height: 180px;
+                        width: 28%;
+                    }
+                    
+                    .image2
+                    {
+                        height: 140px;
+                    }
+
+                    h3
+                    {
+                        font-size: 0.8em;
+                    }
+
+                    .image1 p, .image2 p
+                    {
+                        font-size: 0.65em;
+                    }
+                }
+
+                        @media all and (min-width: 769px) and (max-width: 991px)
+                        {
+                            #resultats
+                            {
+                                height: 800px;
+                            }
+                            
+                            .image1
+                            {
+                                height: 180px;
+                                width: 42%;
+                            }
+                            
+                            .image2
+                            {
+                            height: 160px;
+                            }
+                            
+                            h3
+                            {
+                            font-size: 0.8em;
+                            }
+
+                            .image1 p, .image2 p
+                            {
+                                font-size: 0.65em;
+                            }
+                        }
+
+                                @media all and (min-width: 280px) and (max-width: 768px)
+                                {
+                                    #resultats
+                                    {
+                                        flex-direction: column-reverse;
+                                        height: 2260px;
+                                    }
+
+                                    #populaires
+                                    {
+                                        width: auto;
+                                        border-radius: 0%;
+                                    }
+                                    
+                                    #hebergements
+                                    {
+                                        width: auto;
+                                        flex-direction: column;
+                                        background: none;
+                                        margin-right: 0px;
+                                    }
+                                    
+                                    #hebergements h1
+                                    {
+                                    margin-bottom: 10px;
+                                    }
+
+                                    .image1
+                                    {
+                                        width: auto;
+                                        margin-bottom: 20px;
+                                        margin-top: 10px;
+                                    }
+                                
+                                    .image2
+                                    {
+                                        margin-right: 0%;
+                                        margin-right: 0%;
+                                    }
+
+                                }
+
+                                        @media all and (min-width: 280px) and (max-width: 360px)
+                                        {
+                                            #resultats
+                                            {
+                                                height: 2300px;
+                                            }
+                                        
+                                            #hebergements h1
+                                            {
+                                                margin-bottom: 20px;
+                                            }
+                                        }
