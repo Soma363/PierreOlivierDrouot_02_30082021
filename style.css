@@ -260,6 +260,7 @@ input
     border: none;    
 }
 
+/* logo de la barre de recherche non-apparent sur PC et tablettes */
 .fa-search
 {
     display: none;
@@ -409,6 +410,7 @@ input
 #info
 {
     margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 /* apparence et taille de l'icône du texte d'info */
@@ -437,7 +439,8 @@ input
 {
     display: flex;
     width: auto;
-    height: 680px;    
+    height: 680px;
+    margin-bottom: 40px;    
 }
 
 /* Dimensions et apparence du bloc "Hébergements" des résultats de la recherche d'hôtels*/
@@ -457,8 +460,7 @@ input
 
 /* Dimensions et apparence du bloc "Les plus populaires" des résultats de la recherche d'hôtels*/
 #populaires
-{
-    
+{    
     width: 33%;
     height: auto;
     background-color: #F2F2F2;
@@ -503,7 +505,6 @@ input
     margin-left: 7px;
     padding: 5px 5px 5px 5px;
     box-shadow: 5px 5px 5px #dbd4d4;
-       
 }
 
 /* adaptation des images aux vignettes de la section hébergements */
@@ -556,7 +557,6 @@ h3
 /* Formatage et apparence des icônes d'étoiles des vignettes du bloc hébergements */
 #etoile1, #etoile2, #etoile3, #etoile4, #etoile5, #etoile6 
 {
-    
     margin-left: 10px;
     margin-top: 20px;
     height: 15px;
@@ -609,7 +609,21 @@ h3
     display: inline-block;
     vertical-align: text-bottom;
     margin-left: 10px;
+}
+
+#etoile7
+{
+    margin-top: 35px;
+}
+
+#etoile8
+{
     margin-top: 20px;
+}
+
+#etoile9
+{
+    margin-top: 35px;
 }
 
 /* Formatage et apparence des titres/liens des images du bloc "Populaires" */
@@ -638,12 +652,30 @@ h3
     color: #F2F2F2;
 }
 
+/* prix et signes euros en gras */
+span
+{
+    font-weight: bold;
+}
+
                 /* adaptation responsive de la section "hébergements" et "populaires" */
                 @media all and (min-width: 992px) and (max-width: 1319px)
                 {
+                    #populaires
+                    {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                    }
+                    
+                    #hebergements
+                    {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                    }
+                    
                     .image1
                     {
-                        height: 180px;
+                        height: 190px;
                         width: 28%;
                     }
                     
@@ -661,97 +693,270 @@ h3
                     {
                         font-size: 0.65em;
                     }
+                    
+                    #etoile1, #etoile2, #etoile3, #etoile4, #etoile5, #etoile6
+                    {
+                        font-size: 15px;
+                    }
+
+                    #etoile7
+                    {
+                        margin-top: 45px;
+                    }
+
+                    #etoile8
+                    {
+                        margin-top: 30px;
+                    }
+
+                    #etoile9
+                    {
+                        margin-top: 45px;
+                    }
                 }
-
-                        @media all and (min-width: 769px) and (max-width: 991px)
+                        
+                        @media all and (min-width: 1301px) and (max-width: 1319px)
                         {
-                            #resultats
+                            #etoile8
                             {
-                                height: 800px;
+                                margin-top: 30px;
                             }
                             
-                            .image1
+                            .image2 h3
                             {
-                                height: 180px;
-                                width: 42%;
-                            }
-                            
-                            .image2
-                            {
-                            height: 160px;
-                            }
-                            
-                            h3
-                            {
-                            font-size: 0.8em;
-                            }
-
-                            .image1 p, .image2 p
-                            {
-                                font-size: 0.65em;
-                            }
+                                margin-right: 30px;
+                            }                        
                         }
-
-                                @media all and (min-width: 280px) and (max-width: 768px)
+                        
+                            @media all and (min-width: 992px) and (max-width: 1091px)
+                            {
+                                #populaires
                                 {
-                                    #resultats
-                                    {
-                                        flex-direction: column-reverse;
-                                        height: 2260px;
-                                    }
-
-                                    #populaires
-                                    {
-                                        width: auto;
-                                        border-radius: 0%;
-                                    }
-                                    
-                                    #hebergements
-                                    {
-                                        width: auto;
-                                        flex-direction: column;
-                                        background: none;
-                                        margin-right: 0px;
-                                    }
-                                    
-                                    #hebergements h1
-                                    {
-                                    margin-bottom: 10px;
-                                    }
-
-                                    .image1
-                                    {
-                                        width: auto;
-                                        margin-bottom: 20px;
-                                        margin-top: 10px;
-                                    }
+                                    padding-left: 5px;
+                                    padding-right: 5px;
+                                }
                                 
-                                    .image2
+                                #hebergements
+                                {
+                                    padding-left: 5px;
+                                    padding-right: 5px;
+                                }
+                                
+                                .image1
+                                {
+                                    height: 200px;
+                                }
+                            
+                            }
+                        
+                                @media all and (min-width: 992px) and (max-width: 1051px)
+                                {
+                                    #etoile2, #etoile3, #etoile4, #etoile5, #etoile6
                                     {
-                                        margin-right: 0%;
-                                        margin-right: 0%;
+                                        margin-top: 30px;
                                     }
-
                                 }
 
-                                        @media all and (min-width: 280px) and (max-width: 360px)
+                                    @media all and (min-width: 769px) and (max-width: 991px)
+                                    {
+                                        #blocpage
                                         {
-                                            #resultats
-                                            {
-                                                height: 2300px;
-                                            }
+                                            margin: 28px 5px 0px 5px;
+                                        }
                                         
-                                            #hebergements h1
-                                            {
-                                                margin-bottom: 20px;
-                                            }
+                                        #resultats
+                                        {
+                                            height: 800px;
+                                        }
+                                        
+                                        #populaires
+                                        {
+                                            padding-left: 5px;
+                                            padding-right: 5px;
+                                            width: 40%;                                
+                                        }
+                                        
+                                        #hebergements
+                                        {
+                                            padding-left: 5px;
+                                            padding-right: 5px;
+                                            margin-right: 15px;
+                                            width: 60%;
+                                        }
+                                        
+                                        #hebergements h1, #populaires h1
+                                        {
+                                            font-size: 1.2em;
+                                        }
+                                        
+                                        #populaires h1
+                                        {
+                                            margin-bottom: 25px;
+                                        }
+                                        
+                                        .image1
+                                        {
+                                            height: 180px;
+                                            width: 42%;
+                                            padding: 2px;
+                                        }
+                                        
+                                        .image2
+                                        {
+                                        height: 160px;
+                                        padding: 2px;
+                                        }
+                                        
+                                        .image2 img
+                                        {
+                                            
+                                        }
+                                        
+                                        #etoile8
+                                        {
+                                            margin-top: 50px;
+                                        }
+                                        
+                                        #etoile7,  #etoile9
+                                        {
+                                            margin-top: 65px;
+                                        }
+                                        
+                                        h3
+                                        {
+                                        font-size: 0.8em;
                                         }
 
+                                        .image1 p, .image2 p
+                                        {
+                                            font-size: 0.65em;
+                                        }
+                                    }
+
+                                            @media all and (min-width: 280px) and (max-width: 768px)
+                                            {
+                                                #resultats
+                                                {
+                                                    flex-direction: column-reverse;
+                                                    height: 2550px;
+                                                }
+
+                                                #populaires
+                                                {
+                                                    width: auto;
+                                                    border-radius: 0%;
+                                                }
+                                                
+                                                #populaires h3
+                                                {
+                                                    width: 60%;
+                                                }
+                                                
+                                                #hebergements
+                                                {
+                                                    width: auto;
+                                                    flex-direction: column;
+                                                    background: none;
+                                                    margin-right: 0px;
+                                                }
+                                                
+                                                #hebergements h1
+                                                {
+                                                margin-bottom: 10px;
+                                                }
+
+                                                .image1
+                                                {
+                                                    width: auto;
+                                                    margin-bottom: 20px;
+                                                    margin-top: 10px;
+                                                    height: 250px;
+                                                }
+                                            
+                                                .image2
+                                                {
+                                                    margin-right: 0%;
+                                                    margin-right: 0%;
+                                                }
+                                            }
+
+                                                @media all and (min-width: 280px) and (max-width: 402px)
+                                                {
+                                                    #resultats
+                                                    {
+                                                        height: 2550px;
+                                                    }
+                                                
+                                                    #hebergements h1
+                                                    {
+                                                        margin-bottom: 20px;
+                                                    }
+                                                    
+                                                    #hebergements h1, #populaires h1
+                                                    {
+                                                        font-size: 1.2em;
+                                                    }
+                                                    
+                                                    #populaires .fa-chart-line
+                                                    {                                                
+                                                        font-size: 25px;
+                                                    }
+                                                    
+                                                    h3
+                                                    {
+                                                    font-size: 0.8em;
+                                                    }
+                        
+                                                    .image1 p, .image2 p
+                                                    {
+                                                        font-size: 0.65em;
+                                                    }
+
+                                                    #etoile7, #etoile9
+                                                    {
+                                                        margin-top: 55px;
+                                                    }
+                                                    
+                                                    #etoile8
+                                                    {
+                                                        margin-top: 40px;
+                                                    }
+                                                }    
+                                                        
+                                                        @media all and (min-width: 280px) and (max-width: 340px)
+                                                        {
+                                                            #etoile7
+                                                            {
+                                                                margin-top: 65px;
+                                                            }
+                                                            
+                                                            #etoile8
+                                                            {
+                                                                margin-top: 50px;
+                                                            }                                           
+                                                            
+                                                            #activites a
+                                                            {
+                                                                font-size: 00.8em;
+                                                            }
+                                                        }
+                                            
+                                                            @media all and (min-width: 280px) and (max-width: 329px)
+                                                            {
+                                                                #etoile7
+                                                                {
+                                                                    margin-top: 55px;
+                                                                }
+                                                            }
+
+/* Mise en page générale de la section activités */
 #activites
 {
-    display: flex;    
+    display: flex;
+    margin-bottom: 60px;    
 }
 
+/* apparence des titre-liens des vignettes de la section activités */
 #activites a
 {
     text-decoration: none;
@@ -759,6 +964,7 @@ h3
     color: black;
 }
 
+/* Mise en page des blocs de la section activités */
 #bloc1, #bloc3
 {
     display: flex;
@@ -790,6 +996,7 @@ h3
     margin-left: 20px;
 }
 
+/* Formatage et apparence des vignettes et des images de la section activités */
 .image3, .image6
 {
     width: 100%;
@@ -962,64 +1169,79 @@ h3
 }
 
                 /* adaptation responsive de la partie activites */
-                @media all and (min-width: 280px) and (max-width: 768px)
+                @media all and (min-width: 769px) and (max-width: 1200px)
                 {
-                    #activites
+                    #activites a
                     {
-                        flex-direction: column;
-                        height: auto;
-                        width: 100%;
-                    }
-
-                    #activites h1
-                    {
-                        margin-left: 100px;
-                    }
-                    
-                    #bloc1, #bloc3
-                    {
-                        display: inline-block;
-                        height: 250px;
-                        width: auto;
-                        margin: 0px;
-                        margin-bottom: 40px;
-                        margin-top: 40px;
-                    }
-
-                    #bloc2, #bloc4
-                    {
-                        display: inline-block;
-                        height: 500px;
-                        width: auto;
-                        margin: 0px;
-                        margin-bottom: 40px;                                
-                    }
-
-                    
-                    .image3, .image4, .image5, .image6, .image7, .image8
-                    {               
-                        width: auto;
-                        margin-left: 30px;
-                        margin-right: 30px;
-                        height: 250px;
-                        box-shadow: 5px 5px 5px #dbd4d4;
-                    }
-                    
-                    .image3 img, .image4 img, .image5 img, .image6 img, .image7 img, .image8 img
-                    {
-                        height: 80%;
-                    }
-                    
-                    .image5
-                    {            
-                    margin-bottom: 40px;
+                        font-size: 0.8em;
                     }
                 }
+                
+                        @media all and (min-width: 280px) and (max-width: 768px)
+                        {
+                            #activites
+                            {
+                                flex-direction: column;
+                                height: auto;
+                                width: 100%;
+                            }
+
+                            section h1
+                            {
+                                margin-left: 35px;
+                            }
+                            
+                            #bloc1, #bloc3
+                            {
+                                display: inline-block;
+                                height: 250px;
+                                width: auto;
+                                margin: 0px;
+                                margin-bottom: 40px;
+                                margin-top: 40px;
+                            }
+
+                            #bloc2, #bloc4
+                            {
+                                display: inline-block;
+                                height: 500px;
+                                width: auto;
+                                margin: 0px;
+                                margin-bottom: 40px;                                
+                            }
+
+                            
+                            .image3, .image4, .image5, .image6, .image7, .image8
+                            {               
+                                width: auto;
+                                margin-left: 30px;
+                                margin-right: 30px;
+                                height: 250px;
+                                box-shadow: 5px 5px 5px #dbd4d4;
+                            }
+                            
+                            .image3 img, .image4 img, .image5 img, .image6 img, .image7 img, .image8 img
+                            {
+                                height: 80%;
+                            }
+                            
+                            .image5
+                            {            
+                            margin-bottom: 40px;
+                            }
+                        }
 
 /* Mise en page et formatage généraux du footer */
+
+footer
+{
+    background-color:  #F2F2F2;
+    margin-right: -36px;
+}
+
 #infoscontacts
 {
-    margin: 40px -36px -8px -36px;
+    margin: 40px 0px -8px -36px;
     display: flex;    
     height: 250px;
     width: 100%;
@@ -1052,20 +1274,38 @@ h3
     width: 33.3%;                
 }
 
-                @media all and (max-width: 768px)
+                @media all and (min-width: 280px) and (max-width: 991px)
                 {
-                    #infoscontacts
+                    footer
                     {
-                        flex-direction: column;
-                        height: auto;
-                        width: 100%;
-                        margin-top: 5%;
-                        padding-bottom: 50px;
-                        padding-left: 30px;
-                    }
-
-                    .liens_infos_contacts
-                    {
-                        width: auto;
+                        margin-right: -12px;
                     }
                 }
+                
+                        @media all and (max-width: 768px)
+                        {
+                            footer
+                            {
+                                margin-right: 00px;
+                            }
+                            
+                            #infoscontacts
+                            {
+                                flex-direction: column;
+                                height: auto;
+                                width: 100%;
+                                margin-top: 5%;
+                                padding-bottom: 50px;
+                                padding-left: 30px;
+                            }
+
+                            .liens_infos_contacts
+                            {
+                                width: auto;
+                            }
+                            
+                            .liens_infos_contacts a:hover
+                            {
+                                border: none;
+                            }
+                        }
