@@ -458,7 +458,7 @@ input
 /* Dimensions et apparence du bloc "Les plus populaires" des résultats de la recherche d'hôtels*/
 #populaires
 {
-    justify-content: space-around;
+    
     width: 33%;
     height: auto;
     background-color: #F2F2F2;
@@ -466,7 +466,6 @@ input
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
     padding: 30px;
 }
 
@@ -507,11 +506,14 @@ input
        
 }
 
+/* adaptation des images aux vignettes de la section hébergements */
 .image1 img
 {
     object-fit: cover;
     height: 60%;
     width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 /* Formatage et apparence des titres/liens des images du bloc "Hébergements" */
@@ -570,13 +572,26 @@ h3
 /* Formatage et apparence des vignettes/liens du bloc "Les plus populaires" */
 .image2
 {    
+    
     background-color: #FFFFFF;    
     border-radius: 25px;
     width: 100%;
     height: 150px;
     padding: 05px 05px 05px 05px;
     margin: 0px 7px 30px 7px;
-    box-shadow: 5px 5px 5px #dbd4d4;               
+    box-shadow: 5px 5px 5px #dbd4d4;
+                   
+}
+
+/* adaptation des images aux vignettes de la section "les plus populaires" */
+.image2 img
+{    
+    float: left;
+    object-fit: cover;
+    height: 100%;
+    width: 35%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;    
 }
 
 /* Formatage et apparence des icônes d'étoiles des vignettes "les plus populaires" */
@@ -591,7 +606,10 @@ h3
 
 #etoile7, #etoile8, #etoile9
 {
+    display: inline-block;
+    vertical-align: text-bottom;
     margin-left: 10px;
+    margin-top: 20px;
 }
 
 /* Formatage et apparence des titres/liens des images du bloc "Populaires" */
@@ -601,9 +619,16 @@ h3
     text-decoration: none;
 }
 
+#populaires h3
+{
+    display: inline-block;
+    margin-top: 10px;
+}
+
 /* Mise en page des textes-liens d'infos des vignettes "populaires" */ 
 #texte_infopic7 p, #texte_infopic8 p, #texte_infopic9 p
 {
+    display: inline-block;
     margin-left: 10px;    
 }
 
@@ -727,6 +752,13 @@ h3
     display: flex;    
 }
 
+#activites a
+{
+    text-decoration: none;
+    font-family: "Raleway-Bold";
+    color: black;
+}
+
 #bloc1, #bloc3
 {
     display: flex;
@@ -749,7 +781,10 @@ h3
 {
     margin-right: 20px;
 }
-
+#bloc2 p
+{
+    text-decoration: none;
+}
 #bloc3
 {
     margin-left: 20px;
@@ -841,6 +876,15 @@ h3
     box-shadow: 5px 5px 5px #F2F2F2;
 }
 
+.image3 img, .image6 img
+{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    object-fit: cover;
+    width: 100%;
+    height: 90%;
+}
+
 .image4
 {
     width: 100%;
@@ -848,7 +892,15 @@ h3
     border-radius: 25px;
     box-shadow: 5px 5px 5px #F2F2F2;
     margin-bottom: 40px;
+}
 
+.image4 img
+{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    object-fit: cover;
+    width: 100%;
+    height: 80%;
 }
 
 .image5
@@ -857,6 +909,15 @@ h3
     height: 200px;
     border-radius: 25px;
     box-shadow: 5px 5px 5px #F2F2F2;    
+}
+
+.image5 img
+{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    object-fit: cover;
+    width: 100%;
+    height: 75%;
 }
 
 .image7
@@ -869,13 +930,35 @@ h3
 
 }
 
+.image7 img
+{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    object-fit: cover;
+    width: 100%;
+    height: 78%;
+}
+
 .image8
 {
     width: 100%;
     height: 230px;
     border-radius: 25px;
-    box-shadow: 5px 5px 5px #F2F2F2;
-    
+    box-shadow: 5px 5px 5px #F2F2F2;    
+}
+
+.image8 img
+{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    object-fit: cover;
+    width: 100%;
+    height: 78%;
+}
+
+.image3 p, .image4 p, .image5 p, .image6 p, .image7 p, .image8 p
+{
+    margin-left: 20px;
 }
 
                 /* adaptation responsive de la partie activites */
@@ -921,7 +1004,12 @@ h3
                         height: 250px;
                         box-shadow: 5px 5px 5px #dbd4d4;
                     }
-
+                    
+                    .image3 img, .image4 img, .image5 img, .image6 img, .image7 img, .image8 img
+                    {
+                        height: 80%;
+                    }
+                    
                     .image5
                     {            
                     margin-bottom: 40px;
@@ -931,10 +1019,10 @@ h3
 /* Mise en page et formatage généraux du footer */
 #infoscontacts
 {
-    margin: 40px 0px -8px -36px;
+    margin: 40px -36px -8px -36px;
     display: flex;    
     height: 250px;
-    width: 105%;
+    width: 100%;
     background-color: #F2F2F2;   
 }
 
