@@ -50,7 +50,7 @@ h1
     font-weight: bold;
 }
 
-h2
+h4
 {
     font-size: 1em;
     font-weight: normal;
@@ -209,10 +209,17 @@ nav a:focus
                                 text-justify: auto;
                             }                            
                             
-                            h2
+                            h4
                             {
                                 margin: 10px 15px 0px 15px;
                                 text-justify: auto;
+                            }
+                            @media all and (max-width: 331px)
+                            {
+                                #info
+                                {
+                                    height: 90px;
+                                }
                             }
                         }
 
@@ -300,7 +307,7 @@ input
                         {
                             input
                             {
-                                width: 140px;
+                                width: 180px;
                             }
                         }
 
@@ -443,6 +450,11 @@ input
     margin-bottom: 40px;    
 }
 
+h5
+{
+    font-size: 0%;
+}
+
 /* Dimensions et apparence du bloc "Hébergements" des résultats de la recherche d'hôtels*/
 #hebergements
 {
@@ -472,16 +484,18 @@ input
 }
 
 /* Formatage du titre du bloc "Hébergements */
-#hebergements h1
+#hebergements h2
 {
+    font-family: "Raleway-Bold";
     width: 100%;
     margin: 0px 0px 0px 10px;
     height: 40px;
 }
 
 /* Centrage de l'icône et du titre du bloc "Les plus populaires" */ 
-#populaires h1
+#populaires h2
 {
+    font-family: "Raleway-Bold";
     width: 82%;
     margin: 0px 0px 45px 5px;
 }
@@ -784,12 +798,12 @@ span
                                             width: 60%;
                                         }
                                         
-                                        #hebergements h1, #populaires h1
+                                        #hebergements h2, #populaires h2
                                         {
                                             font-size: 1.2em;
                                         }
                                         
-                                        #populaires h1
+                                        #populaires h2
                                         {
                                             margin-bottom: 25px;
                                         }
@@ -805,11 +819,6 @@ span
                                         {
                                         height: 160px;
                                         padding: 2px;
-                                        }
-                                        
-                                        .image2 img
-                                        {
-                                            
                                         }
                                         
                                         #etoile8
@@ -860,9 +869,9 @@ span
                                                     margin-right: 0px;
                                                 }
                                                 
-                                                #hebergements h1
+                                                #hebergements h2
                                                 {
-                                                margin-bottom: 10px;
+                                                    margin-bottom: 10px;
                                                 }
 
                                                 .image1
@@ -887,14 +896,14 @@ span
                                                         height: 2550px;
                                                     }
                                                 
-                                                    #hebergements h1
+                                                    #hebergements h2
                                                     {
                                                         margin-bottom: 20px;
                                                     }
                                                     
-                                                    #hebergements h1, #populaires h1
+                                                    #hebergements h2, #populaires h2
                                                     {
-                                                        font-size: 1.2em;
+                                                        font-size: 1.4em;
                                                     }
                                                     
                                                     #populaires .fa-chart-line
@@ -904,7 +913,8 @@ span
                                                     
                                                     h3
                                                     {
-                                                    font-size: 0.8em;
+                                                        font-size: 0.8em;
+                                                        margin-top: 10px;
                                                     }
                         
                                                     .image1 p, .image2 p
@@ -918,6 +928,11 @@ span
                                                     }
                                                     
                                                     #etoile8
+                                                    {
+                                                        margin-top: 40px;
+                                                    }
+
+                                                    #etoile1, #etoile2, #etoile3, #etoile4, #etoile5, #etoile6
                                                     {
                                                         margin-top: 40px;
                                                     }
@@ -954,6 +969,11 @@ span
 {
     display: flex;
     margin-bottom: 60px;    
+}
+
+h2
+{
+    font-family: "Raleway-Bold";
 }
 
 /* apparence des titre-liens des vignettes de la section activités */
@@ -1186,9 +1206,10 @@ span
                                 width: 100%;
                             }
 
-                            section h1
+                            section h2
                             {
                                 margin-left: 35px;
+                                margin-bottom: 0px;
                             }
                             
                             #bloc1, #bloc3
