@@ -332,7 +332,8 @@ input
     margin-right: 10px;
     background-color: #DEEBFF;
     padding: 12px;
-    border-radius: 50px;    
+    border-radius: 50px;
+    color: #0065FC;
 }
 
 .fa-child
